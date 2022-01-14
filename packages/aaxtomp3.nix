@@ -1,10 +1,10 @@
-{ stdenv, pkgs, lib }:
+{ stdenv, pkgs, lib, fetchFromGitHub }:
 
 stdenv.mkDerivation rec {
   name = "AAXtoMP3";
   version = "1.3";
 
-  src = stdenv.fetchFromGitHub {
+  src = fetchFromGitHub {
     owner = "KrumpetPirate";
     repo = "AAXtoMP3";
     rev = "v${version}";
