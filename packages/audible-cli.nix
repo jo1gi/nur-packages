@@ -1,4 +1,4 @@
-{ pkgs, stdenv, lib }:
+{ pkgs, stdenv, lib, fetchFromGitHub }:
 with pkgs.python3Packages;
 
 let
@@ -96,7 +96,7 @@ in
     meta = with lib; {
       description = "A command line interface for audible package. With the cli you can download your Audible books, cover, chapter files.";
       homepage = "https://github.com/mkb79/audible-cli";
-      license = licenses.agpl;
+      license = licenses.agpl3;
       maintainers = [ maintainers.jo1gi ];
       platforms = platforms.all;
     };
