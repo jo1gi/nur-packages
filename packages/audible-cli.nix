@@ -16,7 +16,6 @@ let
     doCheck = false;
   };
 in
-
   buildPythonApplication rec {
     pname = "audible-cli";
     version = "0.2.4";
